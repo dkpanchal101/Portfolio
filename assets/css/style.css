@@ -481,6 +481,73 @@ body {
   font-size: 1.6rem;
 }
 
+/**-------------------------------------
+---------------------------------------**/
+
+.project-card {
+  background-color: #1e1e2f;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  max-width: 1000px;
+  height: 400px;
+  margin: 20px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: #ffffff;
+}
+
+.project-category {
+  font-weight: bold;
+  color: #b5ff2f;
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.project-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.project-link .arrow {
+  color: #ff4c39;
+  margin-left: 8px;
+  transition: margin-left 0.3s ease;
+}
+
+.project-link:hover .arrow {
+  margin-left: 14px;
+}
+
+/**-------------------------------------
+---------------------------------------**/
+
+
 /*-----------------------------------*\
   #SKILLS
 \*-----------------------------------*/
@@ -524,10 +591,6 @@ body {
   height: 100%;
   border-radius: inherit;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #CONTACT
@@ -669,10 +732,6 @@ textarea.contact-input {
   color: var(--white);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
@@ -706,10 +765,6 @@ textarea.contact-input {
   background-color: var(--white);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -730,10 +785,6 @@ textarea.contact-input {
 
 }
 
-
-
-
-
 /**
  * responsive for larger than 768px screen
  */
@@ -753,8 +804,6 @@ textarea.contact-input {
     background-size: 130%;
   }
 
-
-
   /**
    * SKILLS, BLOG
    */
@@ -766,10 +815,6 @@ textarea.contact-input {
   }
 
 }
-
-
-
-
 
 /**
  * responsive for larger than 992px screen
