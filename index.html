@@ -350,44 +350,46 @@
       <!-- 
         - #CONTACT
       -->
-
       <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
       <script>
-          emailjs.init("h1Fe5pi8GttpSzfAc"); // Replace with your actual public key
+        emailjs.init("h1Fe5pi8GttpSzfAc"); // Replace with your actual public key
       </script>
-     
-      <section class="contact" id="contact">
+      
+      
+      <section class="contact-section" id="contact">
         <div class="contact-container">
-            <div>
-                <form id="contact-form">
-                    <h4 class="section-subtitle">Don't be shy</h4>
-                    <h2 class="section-title">Drop Me a Line</h2>
+            <!-- Contact Form -->
+            <form id="contact-form" class="contact-form">
+                <h4 class="subtitle">Don't be shy</h4>
+                <h2 class="title">Drop Me a Line</h2>
 
-                    <input type="text" name="from_name" placeholder="Name" required />
-                    <input type="email" name="from_email" placeholder="Email" required />
-                    <textarea name="message" placeholder="Message" required></textarea>
+                <input type="text" name="from_name" placeholder="Name" required />
+                <input type="email" name="from_email" placeholder="Email" required />
+                <textarea name="message" placeholder="Your message..." required></textarea>
 
-                    <button type="submit">Submit Message</button>
-                </form>
-            </div>
+                <button type="submit">Submit Message</button>
+            </form>
 
-            <div class="contact-info">
-                <div class="info-box">
-                    <i class="icon">📍</i>
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <div class="detail">
+                    <span class="icon">📍</span>
                     <div>
                         <h4>Address</h4>
-                        <p>2, Saktinagar Society, Thasara, Gujarat, India</p>
+                        <p>2, Saktinagar Society,<br>Thasara, Gujarat, India</p>
                     </div>
                 </div>
-                <div class="info-box">
-                    <i class="icon">📧</i>
+
+                <div class="detail">
+                    <span class="icon">📧</span>
                     <div>
                         <h4>Email</h4>
                         <p>dkpanchal2023@gmail.com</p>
                     </div>
                 </div>
-                <div class="info-box">
-                    <i class="icon">📞</i>
+
+                <div class="detail">
+                    <span class="icon">📞</span>
                     <div>
                         <h4>Phone</h4>
                         <p>+91 7435960733</p>
@@ -397,6 +399,7 @@
         </div>
     </section>
 
+      
     </article>
   </main>
 
