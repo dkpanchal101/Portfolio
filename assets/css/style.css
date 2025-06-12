@@ -686,6 +686,27 @@ textarea.contact-input {
   color: var(--white);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #ff4d3d;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
