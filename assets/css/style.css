@@ -687,57 +687,69 @@ textarea.contact-input {
 } */
 
 
+/* Contact Section Wrapper */
 .contact-section {
-  padding: 50px 20px;
+  padding: 60px 20px;
+  background-color: #1e1e2f;
 }
 
+/* Container Flex Layout */
 .contact-container {
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
   flex-wrap: wrap;
+  gap: 40px;
   background-color: #2a2a40;
   padding: 40px;
-  border-radius: 20px;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
 }
 
-.contact-form, .contact-details {
+/* Form Styling */
+.contact-form {
   flex: 1 1 300px;
 }
 
-/* Text Styling */
-.subtitle {
+.contact-form .subtitle {
   color: #ff4d4d;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 5px;
+  font-size: 18px;
 }
 
-.title {
-  font-size: 2em;
+.contact-form .title {
+  font-size: 32px;
   margin-bottom: 25px;
 }
 
-/* Form Inputs */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 15px;
+  padding: 14px 16px;
   background-color: #1e1e2f;
   color: #fff;
   border: 1px solid #444;
   border-radius: 10px;
   margin-bottom: 20px;
   font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff4d4d;
 }
 
 .contact-form textarea {
-  height: 150px;
+  height: 140px;
   resize: vertical;
 }
 
 .contact-form button {
   width: 100%;
-  padding: 15px;
+  padding: 14px;
   background-color: #ff4d4d;
   border: none;
   color: white;
@@ -752,63 +764,37 @@ textarea.contact-input {
   background-color: #e04343;
 }
 
-/* Contact Details */
+/* Contact Info Styling */
+.contact-details {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .contact-details .detail {
   display: flex;
+  align-items: flex-start;
   gap: 15px;
   margin-bottom: 25px;
-  align-items: flex-start;
 }
 
-.icon {
+.contact-details .icon {
   font-size: 24px;
   line-height: 1;
+  color: #ff4d4d;
+  margin-top: 3px;
 }
 
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
-.footer {
-  background-color: var(--independence);
-  padding-block: 60px;
+.contact-details h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.copyright {
-  max-width: max-content;
-  margin-inline: auto;
-  margin-block-end: 10px;
-}
-
-.copyright-link {
-  display: inline-block;
-  transition: var(--transition-2);
-  font-weight: var(--fw-600);
-}
-
-.copyright-link:is(:hover, :focus) {
-  color: var(--white);
-}
-
-.footer-list {
-  max-width: max-content;
-  margin-inline: auto;
-}
-
-.footer-list * {
-  display: inline-block;
-}
-
-.footer-list>li:not(:last-child) {
-  margin-inline-end: 40px;
-}
-
-.footer-link {
-  transition: var(--transition-2);
-}
-
-.footer-link:is(:hover, :focus) {
-  color: var(--white);
+.contact-details p {
+  margin: 5px 0 0;
+  color: #ccc;
 }
 
 /*-----------------------------------*\
