@@ -686,22 +686,6 @@ textarea.contact-input {
   color: var(--white);
 }
 
-.contact {
-  padding: 50px;
-  background-color: #0d1b66;
-  border-radius: 20px;
-  color: #fff;
-  margin: 20px;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
