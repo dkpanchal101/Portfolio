@@ -439,21 +439,23 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-        emailjs.init("h1Fe5pi8GttpSzfAc"); // Replace with your actual public key
-  </script>
-  <script>
+
+<script>
+  (function () {
+    emailjs.init("h1Fe5pi8GttpSzfAc"); // Replace with your public key
+  })();
+
   document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
 
     emailjs.sendForm("service_g7vzltk", "template_5b5nwkf", this)
-      .then(() => {
+      .then(function () {
         alert("Message sent successfully!");
-        this.reset();
-      }, (error) => {
-        console.error("FAILED...", error);
-        alert("Failed to send message. Please try again.");
+      }, function (error) {
+        alert("Failed to send message: " + JSON.stringify(error));
       });
+
+    this.reset(); // Optional: Clear form
   });
 </script>
 
