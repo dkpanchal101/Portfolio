@@ -40,3 +40,34 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+// Animate skill bars when in view
+const skillSection = document.querySelector("#skills");
+const skillBars = document.querySelectorAll(".skills-progress");
+
+const animateSkills = () => {
+  skillBars.forEach((bar) => {
+    const targetWidth = bar.getAttribute("style").match(/(\d+)%/)[1];
+    bar.style.width = "0%"; // Reset to 0
+
+    setTimeout(() => {
+      bar.style.width = targetWidth + "%"; // Animate to target width
+    }, 100); // Small delay for smooth start
+  });
+};
+
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateSkills();
+        observer.unobserve(entry.target); // Only run once
+      }
+    });
+  },
+  {
+    threshold: 0.4,
+  }
+);
+
+observer.observe(skillSection);
