@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Dhruv Panchal — UI/UX-focused web developer. View projects, skills, and contact information.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#12121c">
+  <title>Dhruv Panchal Portfolio</title>
+  <link rel="canonical" href="https://dkpanchal101.github.io/">
+  <link rel="icon" href="./assets/images/profilePhoto.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dhruv Panchal — Web Developer Portfolio">
+  <meta property="og:description" content="Explore my latest projects, skills, and how to get in touch.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dkpanchal101.github.io/">
+  <meta property="og:image" content="./assets/images/profilePhoto.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dhruv Panchal — Web Developer Portfolio">
+  <meta name="twitter:description" content="Explore my latest projects, skills, and how to get in touch.">
+  <meta name="twitter:image" content="./assets/images/profilePhoto.jpg">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">Dhruv Panchal</h1>
+      </a>
+
+      <!-- <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+        <ion-icon name="moon"></ion-icon>
+      </button> -->
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container" role="navigation" aria-label="Primary">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#experience" class="navbar-link" data-nav-link>Experience</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="#certifications" class="navbar-link" data-nav-link>Certifications</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="./assets/Panchal_Dhruv.pdf" download="Dhruv_Panchal_Resume.pdf"
+              class="btn btn-primary" aria-label="Download CV as PDF">Download CV</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-labelledby="home-title" data-reveal>
+        <div class="container">
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/profilePhoto.jpg" width="800" height="864" loading="lazy" alt="Portrait of Dhruv Panchal"
+              class="img-cover">
+
+          </div>
+
+          <div class="hero-content">
+
+            <h2 class="hero-title" id="home-title">
+              <span>Hello, I'm</span>
+              <strong>Dhruv Panchal</strong> — MERN Stack Developer
+            </h2>
+
+            <p class="hero-text">
+              I'm a passionate MERN stack developer and AI enthusiast, building full-stack applications with React, Node.js, and MongoDB. I specialize in creating responsive, performant web applications and have experience with IoT systems and machine learning integration.
+            </p>
+
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary blue">Contact Me</a>
+
+              <a href="#about" class="btn">About Me</a>
+            </div>
+
+            <ul class="social-links" aria-label="Social links">
+              <li><a href="https://github.com/dkpanchal101" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
+              <li><a href="https://www.linkedin.com/in/dkpanchal101" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+              <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-labelledby="about-title" data-reveal>
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/profilePhoto.jpg" width="800" height="652" loading="lazy" alt="Dhruv Panchal profile photo"
+              class="img-cover">
+
+            <div class="abs-icon abs-icon-1">
+              <ion-icon name="logo-css3"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-2">
+              <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-3">
+              <ion-icon name="logo-angular"></ion-icon>
+            </div>
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">MY INTRO</p>
+
+            <h2 class="h2 section-title" id="about-title">About Me</h2>
+
+            <p class="section-text">
+              I'm a B.Tech student at Pandit Deendayal Energy University, passionate about full-stack development and AI. With hands-on experience in MERN stack development and IoT systems, I build scalable applications that solve real-world problems. I enjoy working with modern technologies and continuously learning new skills.
+            </p>
+
+            <div class="about-info-grid">
+              <div class="info-card">
+                <ion-icon name="school-outline"></ion-icon>
+                <div>
+                  <span class="info-label">Education</span>
+                  <span class="info-value">B.Tech (2022-2026)</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <ion-icon name="business-outline"></ion-icon>
+                <div>
+                  <span class="info-label">University</span>
+                  <span class="info-value">PDEU, Gandhinagar</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <ion-icon name="location-outline"></ion-icon>
+                <div>
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Gandhinagar, Gujarat</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <ion-icon name="mail-outline"></ion-icon>
+                <div>
+                  <span class="info-label">Email</span>
+                  <span class="info-value">dkpanchal2023@gmail.com</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #EXPERIENCE
+      -->
+
+      <section class="section experience" id="experience" aria-labelledby="experience-title" data-reveal>
+        <div class="container">
+          <p class="section-subtitle">My Journey</p>
+          <h2 class="h2 section-title" id="experience-title">Work Experience</h2>
+          <p class="section-text">
+            Professional experience building real-world applications and working in collaborative environments.
+          </p>
+
+          <div class="experience-timeline">
+            <div class="experience-item" data-reveal>
+              <div class="experience-icon">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
+              <div class="experience-content">
+                <div class="experience-header">
+                  <h3 class="experience-title">MERN Stack Development Intern</h3>
+                  <span class="experience-company">Brainybam Info-Tech Pvt. Ltd., Ahmedabad</span>
+                  <span class="experience-date">May 2025 - July 2025</span>
+                </div>
+                <ul class="experience-details">
+                  <li>Worked on full-stack applications using MongoDB, Express.js, React.js, and Node.js</li>
+                  <li>Built RESTful APIs and designed responsive UI for performance optimization</li>
+                  <li>Collaborated in agile development, participating in sprints, code reviews, and stand-ups</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-title" data-reveal>
+        <div class="container">
+
+          <p class="section-subtitle">My Works</p>
+          <h2 class="h2 section-title" id="portfolio-title">Latest Projects</h2>
+          <p class="section-text">
+            A selection of recent work that highlights my approach to clean design, usability, performance, and thoughtful details.
+          </p>
+
+          <div class="filter-bar" role="tablist" aria-label="Project filters">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack</button>
+            <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+            <button class="filter-btn" data-filter="iot" role="tab" aria-selected="false">IoT & AI</button>
+          </div>
+
+          <div class="project-grid">
+
+            <div class="project-card" data-category="fullstack" data-reveal>
+              <div class="project-image-wrapper">
+                <img src="./assets/images/3_img.png" loading="lazy" alt="Comprehensive Admin Dashboard project cover" class="project-image">
+                <div class="project-overlay">
+                  <a href="https://frontend-theta-liard-49.vercel.app/" class="project-link-icon" target="_blank" rel="noopener noreferrer" aria-label="View Comprehensive Admin Dashboard project">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <p class="project-category">Full Stack</p>
+                <h3 class="project-title">Comprehensive Admin Dashboard</h3>
+                <p class="project-description">Built a responsive and interactive dashboard using React with charts, tables, and filters. Integrated Redux for state management and REST APIs for real-time data fetching.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">Redux</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">REST API</span>
+                </div>
+                <a href="https://frontend-theta-liard-49.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                  View Project <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="iot" data-reveal>
+              <div class="project-image-wrapper">
+                <img src="./assets/images/AI-Background-Image-Generator-How-It-Works-and-Why-You-Need-It.jpg" loading="lazy" alt="AI-Based Water Quality Monitoring System project cover" class="project-image">
+                <div class="project-overlay">
+                  <a href="#" class="project-link-icon" target="_blank" rel="noopener noreferrer" aria-label="View AI-Based Water Quality Monitoring System project">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <p class="project-category">IoT & AI</p>
+                <h3 class="project-title">AI-Based Water Quality Monitoring System</h3>
+                <p class="project-description">Developed an IoT-powered system using FastAPI, ESP32, and MongoDB to monitor real-time water quality. Integrated ML models for anomaly detection and a LLaMA-based assistant for insights.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">ESP32</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">LLaMA</span>
+                  <span class="tech-tag">ML</span>
+                </div>
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                  View Project <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="frontend" data-reveal>
+              <div class="project-image-wrapper">
+                <img src="./assets/images/HeroImg.png" loading="lazy" alt="Panchal Art project cover" class="project-image">
+                <div class="project-overlay">
+                  <a href="https://panchalart.vercel.app/" class="project-link-icon" target="_blank" rel="noopener noreferrer" aria-label="View Panchal Art project">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <p class="project-category">Full Stack</p>
+                <h3 class="project-title">Panchal Art</h3>
+                <p class="project-description">Built a responsive web application for Panchal Art using React and TypeScript to showcase portfolio, services, and contact features. Implemented modern UI components and optimized user experience for professional art and signage presentation.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Tailwind</span>
+                </div>
+                <a href="https://panchalart.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                  View Project <span class="arrow">→</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills" aria-labelledby="skills-title" data-reveal>
+        <div class="container">
+
+          <p class="section-subtitle">My Skills</p>
+
+          <h2 class="h2 section-title" id="skills-title">I Develop Skills Regularly</h2>
+
+          <p class="section-text">
+            I regularly upskill and practice with real projects. Here’s a snapshot of my current strengths.
+          </p>
+
+          <div class="skills-categories">
+            <div class="skills-category" data-reveal>
+              <h3 class="category-title">
+                <ion-icon name="code-outline"></ion-icon>
+                Languages
+              </h3>
+              <div class="skills-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="skills-category" data-reveal>
+              <h3 class="category-title">
+                <ion-icon name="desktop-outline"></ion-icon>
+                Frontend
+              </h3>
+              <div class="skills-tags">
+                <span class="skill-tag">ReactJS</span>
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">TailwindCSS</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Redux</span>
+              </div>
+            </div>
+
+            <div class="skills-category" data-reveal>
+              <h3 class="category-title">
+                <ion-icon name="server-outline"></ion-icon>
+                Backend
+              </h3>
+              <div class="skills-tags">
+                <span class="skill-tag">NodeJS</span>
+                <span class="skill-tag">ExpressJS</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">REST APIs</span>
+              </div>
+            </div>
+
+            <div class="skills-category" data-reveal>
+              <h3 class="category-title">
+                <ion-icon name="library-outline"></ion-icon>
+                Databases & Libraries
+              </h3>
+              <div class="skills-tags">
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Scikit-Learn</span>
+              </div>
+            </div>
+
+            <div class="skills-category" data-reveal>
+              <h3 class="category-title">
+                <ion-icon name="construct-outline"></ion-icon>
+                Tools & Technologies
+              </h3>
+              <div class="skills-tags">
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">Vercel</span>
+                <span class="skill-tag">Netlify</span>
+                <span class="skill-tag">Jupyter</span>
+                <span class="skill-tag">Photoshop</span>
+                <span class="skill-tag">CorelDraw</span>
+              </div>
+            </div>
+
+            <div class="skills-category" data-reveal>
+              <h3 class="category-title">
+                <ion-icon name="brush-outline"></ion-icon>
+                Other Skills
+              </h3>
+              <div class="skills-tags">
+                <span class="skill-tag">UI/UX Design</span>
+                <span class="skill-tag">JSON</span>
+                <span class="skill-tag">ESP32</span>
+                <span class="skill-tag">IoT</span>
+                <span class="skill-tag">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #CERTIFICATIONS
+      -->
+
+      <section class="section certifications" id="certifications" aria-labelledby="certifications-title" data-reveal>
+        <div class="container">
+          <p class="section-subtitle">Achievements</p>
+          <h2 class="h2 section-title" id="certifications-title">Certifications</h2>
+          <p class="section-text">
+            Professional certifications and courses that have enhanced my skills and knowledge.
+          </p>
+
+          <div class="certifications-grid">
+            <div class="certification-card" data-reveal>
+              <div class="certification-icon">
+                <ion-icon name="trophy-outline"></ion-icon>
+              </div>
+              <h3 class="certification-title">NPTEL: Understanding Incubation & Entrepreneurship</h3>
+              <p class="certification-description">Learned startup incubation, business models, and funding strategies.</p>
+            </div>
+
+            <div class="certification-card" data-reveal>
+              <div class="certification-icon">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+              </div>
+              <h3 class="certification-title">IBM AI Internship</h3>
+              <p class="certification-description">Hands-on experience in machine learning and AI model deployment.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title" data-reveal>
+        <div class="contact-container">
+          <!-- Contact Form -->
+          <form id="contact-form" class="contact-form">
+            <h4 class="subtitle">Don't be shy</h4>
+            <h2 class="title" id="contact-title">Drop Me a Line</h2>
+
+            <div class="form-group">
+              <input type="text" name="from_name" placeholder="Name" aria-label="Your name" autocomplete="name" required />
+              <span class="form-icon"><ion-icon name="person-outline"></ion-icon></span>
+            </div>
+            <div class="form-group">
+              <input type="email" name="from_email" placeholder="Email" aria-label="Your email" autocomplete="email" required />
+              <span class="form-icon"><ion-icon name="mail-outline"></ion-icon></span>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your message..." aria-label="Your message" required></textarea>
+              <span class="form-icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span>Submit Message</span>
+              <ion-icon name="send-outline"></ion-icon>
+            </button>
+            <div class="form-message" id="form-message"></div>
+          </form>
+
+          <!-- Contact Details -->
+          <div class="contact-details">
+            <div class="detail">
+              <span class="icon">📍</span>
+              <div>
+                <h4>Address</h4>
+                <p>2, Saktinagar Society,<br>Thasara, Gujarat, India</p>
+              </div>
+            </div>
+
+            <div class="detail">
+              <span class="icon">📧</span>
+              <div>
+                <h4>Email</h4>
+                <p>dkpanchal2023@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="detail">
+              <span class="icon">📞</span>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 7435960733</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3 class="footer-logo">Dhruv Panchal</h3>
+          <p class="footer-text">Web developer passionate about creating beautiful and functional digital experiences.</p>
+          <ul class="footer-social-links">
+            <li><a href="https://github.com/dkpanchal101" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/dkpanchal101" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#experience" class="footer-link">Experience</a></li>
+            <li><a href="#certifications" class="footer-link">Certifications</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2022–2025 <a href="#" class="copyright-link">Dhruv Panchal</a>. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <script>
+    (function () {
+      emailjs.init("h1Fe5pi8GttpSzfAc"); // Replace with your public key
+    })();
+
+    const contactForm = document.getElementById("contact-form");
+    const formMessage = document.getElementById("form-message");
+    const submitBtn = contactForm.querySelector('.submit-btn');
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Show loading state
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Sending...</span><ion-icon name="hourglass-outline"></ion-icon>';
+      formMessage.style.display = 'none';
+
+      emailjs.sendForm("service_r82hgia", "template_f7391fd", this)
+        .then(function () {
+          formMessage.textContent = "Message sent successfully! I'll get back to you soon.";
+          formMessage.className = "form-message success";
+          formMessage.style.display = "block";
+          contactForm.reset();
+          
+          // Reset button
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span>Submit Message</span><ion-icon name="send-outline"></ion-icon>';
+          
+          // Hide message after 5 seconds
+          setTimeout(() => {
+            formMessage.style.display = 'none';
+          }, 5000);
+        }, function (error) {
+          formMessage.textContent = "Failed to send message. Please try again or contact me directly at dkpanchal2023@gmail.com";
+          formMessage.className = "form-message error";
+          formMessage.style.display = "block";
+          
+          // Reset button
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span>Submit Message</span><ion-icon name="send-outline"></ion-icon>';
+        });
+    });
+
+    // Real-time form validation
+    const inputs = contactForm.querySelectorAll('input, textarea');
+    inputs.forEach(input => {
+      input.addEventListener('blur', function() {
+        if (this.value.trim() === '' && this.hasAttribute('required')) {
+          this.style.borderColor = '#ff4d4d';
+        } else {
+          this.style.borderColor = '';
+        }
+      });
+
+      input.addEventListener('input', function() {
+        if (this.style.borderColor === 'rgb(255, 77, 77)') {
+          this.style.borderColor = '';
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
