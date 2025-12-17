@@ -54,6 +54,71 @@
   --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
 }
 
+/* -----------------------------------
+   1. GLOBAL VARIABLES (Must be outside all media queries)
+----------------------------------- */
+:root {
+  /* Colors */
+  --orange-soda: #ff4d4d;
+  --white: #ffffff;
+  --black: #000000;
+  --eerie-black: #1e1e2f;    /* Dark Background */
+  --onyx: #2b2b3c;           /* Card Background */
+  --text-color: #dcdcdc;     
+  
+  /* Accents */
+  --vivid-sky-blue: #00ccff;
+  --fiery-rose: #ff3366;
+  --minion-yellow: #f5e050;
+  --bluetiful: #3c69e7;
+  --gold-web-golden: #ffd700;
+  --rufous: #a81c07;
+
+  /* Typography */
+  --fs-1: 3.2rem;  /* Mobile default size */
+  --fs-2: 2.4rem;
+  --fs-3: 2.0rem;
+  --ff-poppins: 'Poppins', sans-serif;
+  --ff-barlow: 'Barlow', sans-serif;
+  --fw-700: 700;
+
+  /* Spacing & Effects */
+  --section-padding: 60px; /* Smaller for mobile */
+  --transition-2: 0.25s ease;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  --radius-10: 10px;
+}
+
+/* Reset basics */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--eerie-black);
+  color: var(--text-color);
+  font-family: var(--ff-barlow);
+  font-size: 1.6rem;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Re-add Desktop variable overrides if needed */
+@media (min-width: 992px) {
+  :root {
+    --fs-1: 6.4rem;
+    --fs-2: 3.5rem;
+    --fs-3: 3.6rem;
+    --section-padding: 100px;
+  }
+}
+
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -2182,5 +2247,243 @@ section + section { margin-top: 0; }
     margin-block-start: 0;
     padding: 8px 24px;
     margin-left: 16px;
+  }
+}
+
+/* -----------------------------------
+   MOBILE RESPONSIVENESS (Max-width: 768px)
+----------------------------------- */
+@media (max-width: 768px) {
+
+  /* --- 1. GENERAL LAYOUT --- */
+  .container {
+    padding-inline: 20px;
+    max-width: 100%;
+  }
+
+  .section {
+    padding-block: var(--section-padding);
+  }
+
+  /* --- 2. HERO SECTION STACKING --- */
+  /* Force grid to 1 column */
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  /* Center content alignment */
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+
+  /* Fix the floating hero image */
+  .hero-banner {
+    width: 280px;
+    height: 320px;
+    margin-inline: auto; /* Centers the image */
+    order: 0; /* Image on top? Change to 1 if you want bottom */
+  }
+
+  /* Hide complex floating elements on small screens to prevent overflow */
+  .elem-1, .elem-2, .rotate-img {
+    display: none; 
+  }
+
+  .hero-title {
+    font-size: 3.6rem; /* Smaller title */
+  }
+
+  /* --- 3. ABOUT SECTION STACKING --- */
+  .about .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .about-banner {
+    margin-inline: auto;
+  }
+  
+  .about-content {
+    text-align: center; /* Or left if you prefer */
+  }
+  
+  .about-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center list items */
+  }
+
+  /* Hide abstract shapes in About that cause scroll issues */
+  .abs-img, .abs-icon {
+    display: none;
+  }
+
+  /* --- 4. CONTACT SECTION STACKING --- */
+  .contact-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .contact-form, 
+  .contact-details {
+    width: 100%;
+    flex: auto;
+  }
+
+  /* --- 5. FOOTER STACKING --- */
+  .footer .container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-list {
+    align-items: center;
+  }
+}
+
+/* -----------------------------------
+   SMALL MOBILE (Max-width: 480px)
+----------------------------------- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .filter-bar {
+    gap: 8px;
+  }
+  
+  .filter-btn {
+    font-size: 1.3rem;
+    padding: 6px 12px;
+  }
+
+  .project-link-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS FIX
+   ========================================= */
+
+@media (max-width: 991px) {
+
+  /* 1. Reset the Header Container */
+  .header > .container {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Logo left, Toggle right */
+    align-items: center;
+  }
+
+  /* 2. Show the Toggle Button (Hamburger) */
+  .nav-toggle-btn {
+    display: block;
+    font-size: 3rem;
+    color: var(--white);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2000; /* Ensure it stays on top of the menu */
+  }
+
+  /* 3. The Navigation Menu (The Overlay) */
+  .navbar {
+    position: fixed; /* Takes it out of flow so it doesn't squish content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Covers whole screen */
+    background-color: var(--eerie-black); /* Or rgba(18, 18, 28, 0.98) */
+    backdrop-filter: blur(10px);
+    
+    /* Center the content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Hide it by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%); /* Slide it away to the right */
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  /* 4. Active State (When menu is open) */
+  .header.nav-active .navbar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0); /* Bring it back to center */
+  }
+
+  /* 5. List Items Styling */
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .navbar-link {
+    font-size: 2.2rem;
+    color: var(--white);
+    display: block;
+    text-align: center;
+    opacity: 0; /* For animation */
+    transform: translateY(10px);
+    transition: 0.3s ease;
+  }
+
+  /* Staggered Animation for links when opening */
+  .header.nav-active .navbar-link {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+  }
+
+  /* 6. Fix the "Download CV" Button */
+  .navbar .btn {
+    margin-top: 30px;
+    margin-left: 0;
+    width: auto;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 1.6rem;
+  }
+
+  /* 7. Fix the Hero Content (So it is full width) */
+  .hero .container {
+    grid-template-columns: 1fr; /* Stack vertically */
+    text-align: center;
+  }
+  
+  .hero-content {
+    width: 100%; /* Ensure text takes full width */
+    margin: 0 auto;
+  }
+  
+  /* Ensure the title doesn't break weirdly */
+  .hero-title {
+    font-size: 4rem; 
+    line-height: 1.2;
   }
 }
