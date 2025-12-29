@@ -1021,7 +1021,7 @@ section + section { margin-top: 0; }
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  padding: 35px 30px;
+  padding: 25px 20px;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
@@ -1050,17 +1050,17 @@ section + section { margin-top: 0; }
 .skills-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 
 .skill-tag {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 5px 10px;
   background: rgba(255, 77, 77, 0.1);
   border: 1px solid rgba(255, 77, 77, 0.3);
   border-radius: 20px;
   color: var(--white);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
